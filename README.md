@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Chimdubem/product-page)
+- Solution URL: [github.com/Chimdubem/product-page](https://github.com/Chimdubem/product-page)
 - Live Site URL: [productpage-chimdubem.netlify.app](https://productpage-chimdubem.netlify.app)
 
 ## My process
