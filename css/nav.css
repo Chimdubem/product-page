@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(219, 9%, 45%);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.section-nav {
+  padding: 2.4rem;
+}
+
+.nav {
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  align-items: center;
+
+  position: relative;
+}
+
+.nav-left {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.left-menu {
+  display: none;
+}
+
+.sslinks li {
+  list-style: none;
+}
+
+.sslink {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
+}
+
+.sslinks ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.sslinks {
+  display: none;
+  flex-direction: column;
+  gap: 6.4rem;
+
+  position: fixed;
+  /* top: -2rem; */
+  left: -3rem;
+  background-color: #fff;
+  width: 65%;
+  height: 100vh;
+
+  padding-left: 4rem;
+  z-index: 100000;
+}
+
+.left-logo {
+}
+
+.left-links {
+  display: flex;
+}
+
+.left-links ul {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.left-links ul li {
+  list-style: none;
+}
+
+.link {
+  padding: 1rem;
+  text-decoration: none;
+  color: hsl(220, 14%, 75%);
+}
+
+.nav-right {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.nav-cart {
+  position: relative;
+}
+
+.nav-avatar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.avatar {
+  width: 60%;
+}
+
+/******************************************/
+/* EFFECTS */
+/******************************************/
+
+.link:hover,
+.link:visited {
+  /* padding: 1rem; */
+  cursor: pointer;
+  color: hsl(220, 13%, 13%);
+  box-shadow: 0 0 0 3px #ff7d1a;
+}
+
+/* .nav-cart svg:hover,
+.nav-cart svg:hover, */
+.avatar:hover,
+.avatar:active {
+  cursor: pointer;
+  box-shadow: 0 0 0 3px rgba(255, 125, 26, 0.7);
+  border-radius: 50%;
+}
+
+.nav-cart svg:hover,
+.nav-cart svg:hover {
+  cursor: pointer;
+}
+
+/******************************************/
+/* NAV CART */
+/******************************************/
+
+/* CART-NUMBER */
+
+.cart-no {
+  background-color: #ff7d1a;
+  padding: 0.2rem 0.9rem;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 9px;
+
+  position: absolute;
+  top: -32%;
+  right: -50%;
+}
+
+/* CART-FULL */
+.cart {
+  background-color: white;
+
+  width: 35rem;
+  height: 24rem;
+
+  position: absolute;
+  top: 120%;
+  right: -20%;
+
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  box-shadow: 0px 20px 30px 0px rgba(8, 8, 8, 0.256);
+}
+
+.cart-head {
+  padding: 2rem 1.2rem;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+}
+
+.cart-body-full {
+  padding: 2.4rem 1.2rem;
+  font-weight: 700;
+}
+
+.cart-body-full button {
+  background-color: #ff7d1a;
+  color: #fff;
+  border: none;
+  padding: 1.7rem 0;
+
+  border-radius: 10px;
+}
+
+.cart-full-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cart-top {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.cart-img {
+  width: 20%;
+}
+
+.cart-full-thumb {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cart-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 400;
+}
+
+.total,
+.cart-dollar {
+  font-weight: 700;
+  color: #333;
+}
+
+/* CART EMPTY */
+
+.cart-nothing {
+  background-color: white;
+
+  width: 35rem;
+  height: 24rem;
+
+  position: absolute;
+  top: 120%;
+  right: -20%;
+
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  box-shadow: 0px 20px 30px 0px rgba(8, 8, 8, 0.256);
+}
+
+.cart-nothing-head {
+  padding: 2rem 1.2rem;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+}
+
+.cart-nothing-body {
+  padding: 2.4rem 1.2rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CART FILLED */
+.cart-bin:hover,
+.cart-bin:active {
+  cursor: pointer;
+}
+button:hover,
+button:active {
+  cursor: pointer;
+}
+
+/* CHECK-OUT SUCCESSFUL */
+.cart-successful {
+  background-color: white;
+
+  width: 35rem;
+  height: 24rem;
+
+  position: absolute;
+  top: 120%;
+  right: -20%;
+
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  box-shadow: 0px 20px 30px 0px rgba(8, 8, 8, 0.256);
+}
